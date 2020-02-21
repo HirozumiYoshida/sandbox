@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SideMenu
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+/*
+        let viewController = ViewController()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        
+        let menuViewController = MenuViewController()
+        let menuNavigationController = SideMenuNavigationController(rootViewController: menuViewController)
+        SideMenuManager.default.leftMenuNavigationController = menuNavigationController
+        SideMenuManager.default.addPanGestureToPresent(toView: navigationController.navigationBar)
+        SideMenuManager.default.addScreenEdgePanGesturesToPresent(toView: navigationController.view, forMenu: .left)
+*/
+        
+//        let label = UILabel()
+//        label.frame = CGRect(x:150,y:200,width:160,height:30)
+//        label.text = "TEST"
+//        viewController.view.addSubview(label)
+
+        
         return true
     }
 
